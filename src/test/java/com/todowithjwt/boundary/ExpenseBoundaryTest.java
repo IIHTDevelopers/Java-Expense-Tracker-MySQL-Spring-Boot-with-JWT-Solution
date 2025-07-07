@@ -47,7 +47,7 @@ public class ExpenseBoundaryTest {
 	}
 
 	@Test
-	public void testNameNotBlank() throws IOException {
+	public void testExpenseNameNotBlank() throws IOException {
 		ExpenseDTO expenseDTO = new ExpenseDTO();
 		expenseDTO.setName("");
 		Set<ConstraintViolation<ExpenseDTO>> violations = validator.validate(expenseDTO);
