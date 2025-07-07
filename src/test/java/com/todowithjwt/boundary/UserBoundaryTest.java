@@ -35,7 +35,7 @@ public class UserBoundaryTest {
 	}
 
 	@Test
-	public void testIdNotNull() throws IOException {
+	public void testUserIdNotNull() throws IOException {
 		UserDTO userDTO = new UserDTO();
 		userDTO.setId(0);
 		Set<ConstraintViolation<UserDTO>> violations = validator.validate(userDTO);
