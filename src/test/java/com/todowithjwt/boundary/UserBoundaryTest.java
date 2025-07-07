@@ -47,7 +47,7 @@ public class UserBoundaryTest {
 	}
 
 	@Test
-	public void testNameNotBlank() throws IOException {
+	public void testUserNameNotBlank() throws IOException {
 		UserDTO userDTO = new UserDTO();
 		userDTO.setName("");
 		Set<ConstraintViolation<UserDTO>> violations = validator.validate(userDTO);
